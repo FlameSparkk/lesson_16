@@ -1,0 +1,128 @@
+.main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-header {
+    margin-bottom: 15px;
+}
+
+.main-header__title__wrapper {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+.main-header__title {
+    position: relative;
+    padding-left: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-header__title::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/paint_brush.png');
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 26px;
+}
+
+.main-header__nav {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfe1e5;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__list-item {
+    display: block;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.nav__list-item:hover {
+    background-color: #81e4ed;
+}
+
+.main-content {
+    margin-bottom: 25px;
+}
+
+.content__images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__image__wrapper {
+    position: relative;
+    margin: 15px 15px;
+}
+
+.content__image__wrapper:hover .image__hover-block{
+    display: block;
+}
+
+.image__hover-block {
+    display: none;
+    width: 220px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2aacc8;
+}
+
+.hover-block__link {
+    position: absolute;
+    left: 70px;
+    top: 30px;
+}
+
+.hover-block__link:last-child {
+    left: 140px;
+}
+
+.main-footer__nav {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #dfe1e5;
+    padding-top: 30px;
+}
+
+.main-footer__nav__button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main-footer__nav__button:hover {
+    background-color: #81e4ed;
+}
+
+.main-footer__nav__button--far {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #e8ebf1;
+}
+
+.main-footer__nav__button--last {
+    margin-left: 25px;
+}

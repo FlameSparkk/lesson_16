@@ -1,0 +1,167 @@
+.main {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.main__header {
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    position: relative;
+    padding-left: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.header__title::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/email_icon.png');
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 20px;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.thank-you__wrapper {
+    width: 570px;
+    margin-bottom: 30px;
+}
+
+.thank-you__first-part {
+    margin-bottom: 25px;
+}
+
+.email-link {
+    color: #2aacc8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-form__label,
+.contact-form__input {
+    display: block;
+}
+
+.contact-form__label {
+    margin-bottom: 10px;
+}
+
+.contact-form__input {
+    width: 480px;
+    border: 1px solid #b4bac5;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.contact-form__input:focus,
+.contact-form__text-area:focus {
+    border-color: #e8fcfe;
+}
+
+.contact-form__text-area {
+    width: 480px;
+    border: 1px solid #b4bac5;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.submit-button {
+    display: block;
+    width: 160px;
+    height: 60px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 2px 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid #2aacc8;
+    border-radius: 10px;
+    background-color: #2aacc8;
+    background-image: linear-gradient(to top, #2aacc8 0%, #60cede 15%, #72dae6 50%, #81e4ed 100%);
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button__text {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.submit-button__text::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/point_arrow.png');
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+.content__adress {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 340px;
+    border: 1px solid #81e4ed;
+    background-color: #e8fcfe;
+}
+
+.map__description {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.map {
+    border: 5px solid #ffffff;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.adress-wrapper {
+    display: flex;
+    width: 140px;
+    flex-direction: column;
+}
+
+.adress__title {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

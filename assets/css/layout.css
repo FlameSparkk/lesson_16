@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+p, h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.body {
+  font-family: Arial;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  background-color: #e8ebf1;
+}
+
+.page-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.navigation {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.services__nav-link__wrapper {
+  position: relative;
+  display: block;
+}
+
+.services__nav-link__wrapper:hover .services__list {
+  display: block;
+}
+
+.services__nav-link__wrapper:hover {
+  border-top: 5px solid #2aacc8; 
+  background-color: #fff;
+}
+
+.services-nav-link:hover {
+  color: #2aacc8;
+}
+
+.nav-link {
+  display: block;
+  position: relative;
+}
+
+.nav-link--active {
+  border-top: 5px solid #2aacc8; 
+}
+
+.nav-link:hover {
+  border-top: 5px solid #2aacc8; 
+}
+
+.nav-link:nth-child(4) {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.nav-link:nth-child(4)::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/down_arrow.png');
+  position: absolute;
+  left:95%;
+  top:45%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 5px;
+}
+
+.services-nav-link {
+  display: block;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.services-nav-link::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/down_arrow.png');
+  position: absolute;
+  left:95%;
+  top:45%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 5px;
+}
+
+.services__list {
+  width: 200px;
+  height: 240px;
+  display: none;
+  position: absolute;
+  padding-top: 15px;
+  left: 0;
+  top: 10%;
+  padding-left: 15px;
+  padding-right: 25px;
+  border-bottom: 5px solid #2aacc8;
+  background-color: #fff;
+  list-style: none;
+}
+
+.services__list-item {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: initial;
+}
+
+.services__list-item__link:hover {
+  text-decoration: underline;
+}
+
+.services__list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+
+.logo {
+  width: 148px;
+  height: 40px;
+}
+
+.logo img {
+  width: 148px;
+  height:40px;
+}
+
+.navigation-link {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation-link:last-child {
+  margin-right: 0;
+}
+
+.page-footer {
+  background-color: #e8ebf1;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.upper-footer__section {
+  width: 200px;
+}
+
+.footer-section__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;  
+}
+
+.about-us__footer__title {
+  margin-bottom: 25px;
+}
+
+.footer__about-us__text,
+.explore__link,
+.browse__link,
+.company-adress,
+.company-phone,
+.company-fax {
+  font-size: 14px;
+}
+
+.footer__about-us {
+  width: 235px;
+}
+
+.footer__about-us__text {
+  margin: 0;
+}
+
+.footer__explore {
+  width: 70px;
+}
+
+.footer__explore__list {
+  padding: 0;
+  list-style: none;
+}
+
+.explore__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer__browse {
+  width: 105px;
+}
+
+.footer__browse__list {
+  padding: 0;
+  list-style: none;
+}
+
+.browse__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.browse__link:hover,
+.explore__link:hover {
+  text-decoration: underline;
+}
+
+.footer__contact-us {
+  width: 140px;
+}
+
+.contact-us__footer__title {
+  margin-bottom: 25px;
+}
+
+.company-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.company-adress {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.company-phone:hover,
+.company-fax:hover {
+  text-decoration: underline;
+}
+
+.footer__connect {
+  display: flex;
+  flex-wrap: wrap;
+  width: 185px;
+}
+
+.footer__connect__link {
+  width: 50px;
+  height: 50px;
+  margin-right: auto;
+}
+
+.down-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.copyright {
+  width: 640px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 210px;
+}
